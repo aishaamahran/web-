@@ -1,7 +1,7 @@
 let comments = [];
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('https://jsonplaceholder.typicode.com/comments')
+  fetch('https://jsonplaceholder.typicode.com/comments?_limit=10')
     .then(res => res.json())
     .then(data => {
       comments = data;
