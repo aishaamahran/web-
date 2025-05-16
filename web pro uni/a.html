@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comments Manager</title>
+  <link rel="stylesheet" href="x.css">
+</head>
+<body>
+  <div class="c">
+    <h1>Comments List</h1>
+    <button id="a">Add</button>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Body</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="commentsTableBody">
+      </tbody>
+    </table>
+
+    <div id="p" class="hidden">
+      <h2 id="k">Add Comment</h2>
+      <form id="n">
+        <input type="hidden" id="commentId" />
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea id="body" placeholder="Comment" required></textarea>
+        <button type="submit">Save</button>
+        <button type="button" id="t">Cancel</button>
+      </form>
+    </div>
+  </div>
+<div id="editPage" class="hidden">
+  <h2>Edit Comment</h2>
+  <form id="editForm">
+    <input type="hidden" id="editCommentId" />
+    <input type="text" id="editName" placeholder="Name" required />
+    <input type="email" id="editEmail" placeholder="Email" required />
+    <textarea id="editBody" placeholder="Comment" required></textarea>
+    <button type="submit">Update</button>
+    <button type="button" id="editCancelBtn">Cancel</button>
+  </form>
+</div>
+
+  <script src="d.js"></script>
+</body>
+</html>
